@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MorgansCalc {
@@ -8,29 +9,45 @@ public class MorgansCalc {
     Double[] PayCheckAmt = new Double[10];
     String fName,lName;
     int menuOperation;
+    String menuOperationString;
     Scanner userInput = new Scanner(System.in);
+    boolean checkPoint = true;
 
 
     public void mainMenu(){
-        System.out.println("Please one of the following option numbers.");
-        System.out.print("Option 1: Enter Employee Data\n\rOption 2: Display All Employees\n\r" +
-                "Option 3: Display Single Employee\n\rOption 4: Exit\n\r");
-        menuOperation = userInput.nextInt();
-        switch(menuOperation) {
-            case 1:
-                System.out.println("Option 1 selected");
-                setEmployees();
-                break;
-            case 2:
-                System.out.println("Option 2 selected");
-                break;
-            case 3:
-                System.out.println("Option 3 selected");
-                break;
-            case 4:
-                System.out.println("Option 4 selected");
-                break;
-        }
+        do {
+            System.out.println("Please one of the following option numbers.");
+            System.out.print("Option 1: Enter Employee Data\n\rOption 2: Display All Employees\n\r" +
+                    "Option 3: Display Single Employee\n\rOption 4: Exit\n\r");
+            try {
+                menuOperationString = userInput.next();
+                menuOperation = Integer.parseInt(menuOperationString);
+            }
+            catch(NumberFormatException e){
+                System.out.println("Invalid input please try again");
+                menuOperation = 0;
+            }
+
+                switch (menuOperation) {
+                    case 1:
+                        System.out.println("Option 1 selected");
+                        setEmployees();
+                        break;
+                    case 2:
+                        System.out.println("Option 2 selected");
+                        displayEmployees();
+                        break;
+                    case 3:
+                        System.out.println("Option 3 selected");
+                        break;
+                    case 4:
+                        System.out.println("Option 4 selected");
+                        checkPoint = false;
+                        break;
+                    default:
+                        System.out.println("Invalid Option Selected");
+                }
+        }while(checkPoint);
     }
 
     public void setEmployees(){
@@ -50,7 +67,7 @@ public class MorgansCalc {
                         do{
                             System.out.println("Please enter the employee number " + i + 1 +"'s status full time (FT) or part time (PT)");
                             Employees[i][j] = userInput.next();
-                            if(Employees[i][j].toUpperCase() == "PT" || Employees[i][j].toUpperCase() == "FT"){
+                            if(Employees[i][j].toUpperCase().equals("PT") || Employees[i][j].toUpperCase().equals("FT")){
                                 validStatus = true;
                             }
                             else{
@@ -59,22 +76,31 @@ public class MorgansCalc {
                         }while(!validStatus);
                 }
             }
-            System.out.println("Please enter employee number " + i + 1 +"'s paycheck amount");
+            System.out.println("Please enter employee number " + i + 1 + "'s paycheck amount");
             PayCheckAmt[i] = userInput.nextDouble();
             do{
                 System.out.println("Would you like to continue entering employees? (Y or N)");
                 employContinue = userInput.next().toUpperCase();
-            }while (employContinue != "Y" && employContinue != "N");
-            if(employContinue == "N") {
+            }while (!employContinue.equals("Y") && !employContinue.equals("N"));
+            if(employContinue.equals("N")) {
                 break;
             }
         }
     }
 
-    public void displayEmployees(){
-        for (int i = 0; i<=10; i++){
-            
+    public void displayEmployees() {
+        String empStatus;
+        for (int i = 0; i < 10; i++) {
+                if(Employees[i][2].equals("PT")){
+                    empStatus = "Part Time";
+                }
+                else if(Employees[i][2].equals("FT")){
+                    empStatus = "Full Time";
+                }
+                System.out.println("First Name: " + Employees[i][0]);
+                System.out.println("Last Name: " + Employees[i][1]);
+                System.out.println("Employee Status " + Employees[i][2]);
+            }
         }
     }
-}
 
