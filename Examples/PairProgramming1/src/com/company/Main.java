@@ -2,7 +2,6 @@ package com.company;
 import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.text.ParseException;
 import java.util.Scanner;
 
 public class Main {
