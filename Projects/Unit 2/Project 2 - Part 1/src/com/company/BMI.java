@@ -114,13 +114,13 @@ public class BMI {
     private double CalcBmiImperial(){
         double heightSquared = Math.pow(height, 2);
 
-        bmi = 703  * (weight/heightSquared);
+        bmi = 703  *  weight/heightSquared;
         return bmi;
     }
 
     //Calculates Metric BMI
     private double CalcBmiMetric(){
-        double heightSquared = Math.pow(height, 2);
+        double heightSquared = Math.pow(height/100, 2);
 
         bmi = weight/heightSquared;
         return bmi;

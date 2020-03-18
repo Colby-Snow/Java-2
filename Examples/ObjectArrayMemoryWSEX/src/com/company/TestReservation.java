@@ -22,6 +22,8 @@ public class TestReservation {
         printRes(1, reservations);
 
         System.out.println(reservations[1].toString());
+
+        System.out.println(reservations[1].calcFreqFlyerDiscount(250));
     }
     public static void printRes(int i, Reservation[] res){
         System.out.println(res[i].getResNumber());

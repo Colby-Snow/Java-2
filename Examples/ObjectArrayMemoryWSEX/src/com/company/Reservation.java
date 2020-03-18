@@ -5,6 +5,7 @@
 package com.company;
 
 public class Reservation {
+    private static final double FREQ_FLYER_DISCOUNT = .15;
 
     //instance variables
     private int resNumber;
@@ -98,6 +99,13 @@ public class Reservation {
         return resFreqFlyer;
     }
 
+    public double calcFreqFlyerDiscount(double cost){
+        double discountAmt = 0;
+        if(resFreqFlyer){
+            discountAmt = cost * FREQ_FLYER_DISCOUNT;
+        }
+        return discountAmt;
+    }
 
     @Override
     public String toString(){
@@ -106,7 +114,9 @@ public class Reservation {
 
         resMsg = String.format("Reservation number: %4d" +
                 "\nCustomer name: %-22s" +
-                "\nFrequent flyer: %4b", resNumber, resCustName, resFreqFlyer);
+                "\nStatus: %-10s" +
+                "\nDiscount: %4.2f",
+                resNumber, resCustName, (resFreqFlyer ? "Frequent flyer" : "Not a frequent flyer"), this.calcFreqFlyerDiscount(250));
         return resMsg;
     }
 }

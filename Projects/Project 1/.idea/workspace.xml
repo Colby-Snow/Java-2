@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="78c089b0-c665-4dbf-90f8-4a9c899f9f8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/out/production/Examples/com/company/ResTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/out/production/Examples/com/company/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/out/production/Examples/com/company/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/out/production/Examples/com/company/TestReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/out/production/Examples/com/company/TestReservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/src/com/company/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/src/com/company/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/src/com/company/TestReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Examples/ObjectArrayMemoryWSEX/src/com/company/TestReservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/Project 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/out/production/Project 2/com/company/BMI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/out/production/Project 2/com/company/BMITest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/src/com/company/BMI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit 2/Project 2/src/com/company/BMITest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1YzmoIPrjzpUCDQ8czjCAuDzhAQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78c089b0-c665-4dbf-90f8-4a9c899f9f8a" name="Default Changelist" comment="" />
+      <created>1583953972888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583953972888</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1583953988653">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583953988653" />
+  </component>
+</project>

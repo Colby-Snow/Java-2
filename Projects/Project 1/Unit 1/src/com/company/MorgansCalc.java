@@ -232,10 +232,10 @@ public class MorgansCalc {
                 row = 3;
             }
             if(status.toUpperCase().equals("FT")){
-                column = 0;
+                column = 1;
             }
             else {
-                column = 1;
+                column = 0;
             }
             bonusTotal = bonusRates[row][column] * payCheck;
             return bonusTotal;
